@@ -29,4 +29,12 @@ def create_app(test_config=None):
     def hello():
         return 'Hello, World!'
 
+    @app.route('/foo')
+    def foo():
+        return 'Foo'
+
+    @app.route('/bar')
+    def bar():
+        return 'Bar'
+
     return app
