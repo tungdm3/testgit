@@ -37,4 +37,12 @@ def create_app(test_config=None):
     def bar():
         return 'Bar'
 
+    @app.route('/foo-v2')
+    def foo2():
+        return 'Foo v2'
+
+    @app.route('/bar-v2')
+    def bar2():
+        return 'Bar v2'
+
     return app
